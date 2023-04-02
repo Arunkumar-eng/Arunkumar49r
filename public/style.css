@@ -1,0 +1,256 @@
+*
+{
+user-select: none;
+scroll-behavior: smooth;
+}
+body
+{
+  position: relative;
+  margin: 0;
+}
+#intro{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 0;
+  margin-top: 3rem;
+}
+#intro_txt{
+  font-family: 'Poppins', sans-serif;
+  flex: 1;
+  text-align: center;
+  color: #6A5EB4;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+#intro_img{
+  background: url('assets/intro.png')  no-repeat center;
+  background-size: contain;
+  min-height: 85vh;
+  flex:1;
+  filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.5));
+}
+#intro_link{
+  cursor: pointer;
+  color: #6A5EB4;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  width: max-content;
+  padding: 1rem;
+  border: 2px solid#6A5EB4;
+  box-shadow: 0px 15px 20px -15px rgba(1,1,1,0.5);
+  transition: all 500ms ease;
+}
+#intro_link:hover{
+  background-color: #6A5EB4;
+  color: #fff;
+}
+#intro_btn{
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+#skillshead,
+#projectshead,
+#academicshead,
+#personalhead{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#personal,
+#skills,
+#academics,
+#projects
+{
+  padding: 4rem 1rem;
+}
+
+#section-3,
+#section-4,
+#footer
+{
+  display: flex ;
+  align-items: center;
+  justify-content: center ;
+  flex-direction: column;
+}
+table,
+#acheivements
+{
+  border-radius: 36px;
+}
+
+table
+{
+  color: black;
+  padding: 1rem 0.25rem;
+  display: block;
+  border-collapse: separate;
+  border-spacing: 1rem 1rem;
+}
+.icon
+{
+  display: inline-block;
+  padding: 0.3rem;
+  margin: 0.1rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: #292724;
+  box-shadow: inset -5px -5px 8px #181715,
+  inset 5px 5px 8px #3a3733;
+}
+
+
+.txt
+{
+  color: #ffffff;
+  margin-top: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 601px)
+{
+  html{
+      font-size: 16px;
+  }
+  .icon img
+  {
+      width: 5rem;
+      height: 5rem;
+  }
+
+}
+
+@media screen and (max-width: 600px)
+{
+
+  html{
+      font-size: 14px;
+  }
+  #intro{
+      flex-direction: column;
+  }
+  #intro_img{
+      width: 75%;
+  }
+  .icon img
+  {
+      width: 3rem;
+      height: 3rem;
+  }
+  #cright{
+      width: 100%;
+  }
+  table td:nth-child(3)
+  {
+      display: none;
+  }
+}
+.projcont
+{
+  border-radius: 20px;
+  border: 0.5px solid rgba(0,0,0,0.15);
+  padding: 1.5rem;
+  flex-direction: row;
+  display: inline-block;
+  margin: 0.75rem;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),
+              .3s box-shadow,
+              .3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.projcont:hover,.icon:hover{
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12),
+            0 4px 8px rgba(0,0,0,.06);
+}
+.projlist
+{
+  width: 250px;
+  height: 250px;
+  margin: 0.75rem;
+  padding: 0.75rem;
+}
+
+.projtit
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: left !important;
+}
+
+.projcatg
+{
+  font-weight: 800;
+  font-style: italic;
+  text-align: right !important;
+  color:#9273ce;
+}
+a
+{
+  text-decoration: none;
+}
+#footer
+{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+#footer>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem;
+  line-height: 1.7;
+}
+#footer a
+{
+  color: rgba(255,255,255,.55);
+}
+#footer a:hover{
+  color: #fff;
+}
+.view_btn{
+  border-radius: 50px;
+  background-color:#fd5e53;
+  color: #fff;
+  border: 2px solid #fd5e53;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+.github_btn{
+  border-radius: 50px;
+  color:#fd5e53;
+  border: 2px solid #fd5e53;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: all 0.5s linear;
+}
+.github_btn:hover{
+  color: #fff;
+  background-color: #fd5e53;
+}
+.view_btn:hover{
+  filter: brightness(0.85);
+}
+.github_btn a,
+.view_btn a{
+  color: inherit;
+  padding: 0.25rem;
+}
