@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Arunkumar49r/static/css/main.e6c13ad2.css",
+    "main.js": "/Arunkumar49r/static/js/main.d3c66c85.js",
+    "index.html": "/Arunkumar49r/index.html",
+    "main.e6c13ad2.css.map": "/Arunkumar49r/static/css/main.e6c13ad2.css.map",
+    "main.d3c66c85.js.map": "/Arunkumar49r/static/js/main.d3c66c85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d3c66c85.js"
+  ]
+}
