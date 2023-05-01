@@ -2,6 +2,7 @@
 {
 user-select: none;
 scroll-behavior: smooth;
+z-index: 1;
 }
 body
 {
